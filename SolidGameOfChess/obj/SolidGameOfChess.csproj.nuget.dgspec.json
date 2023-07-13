@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess.csproj": {}
+    "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess.csproj": {
+    "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess.csproj",
+        "projectUniqueName": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj",
         "projectName": "SolidGameOfChess",
-        "projectPath": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess.csproj",
+        "projectPath": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj",
         "packagesPath": "C:\\Users\\joao.reis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\obj\\",
+        "outputPath": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joao.reis\\AppData\\Roaming\\NuGet\\NuGet.Config",
