@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\joao.reis\\.nuget\\packages\\": {}
+    "C:\\Users\\João Silva\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChessAI\\SolidGameOfChessAI.csproj",
+      "projectUniqueName": "E:\\SolidGameOfChess\\SolidGameOfChessAI\\SolidGameOfChessAI.csproj",
       "projectName": "SolidGameOfChessAI",
-      "projectPath": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChessAI\\SolidGameOfChessAI.csproj",
-      "packagesPath": "C:\\Users\\joao.reis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joao.reis\\Desktop\\SolidGameOfChess\\SolidGameOfChessAI\\obj\\",
+      "projectPath": "E:\\SolidGameOfChess\\SolidGameOfChessAI\\SolidGameOfChessAI.csproj",
+      "packagesPath": "C:\\Users\\João Silva\\.nuget\\packages\\",
+      "outputPath": "E:\\SolidGameOfChess\\SolidGameOfChessAI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joao.reis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\João Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "\\\\10.0.0.9\\NuGetPackages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -62,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

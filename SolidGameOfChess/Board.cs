@@ -1,14 +1,13 @@
 ﻿namespace SolidGameOfChess
 {
-    public static class Board
+    public class Board
     {
-        public static List<List<int>> BoardPlaces { get; set; }
-        public static void SetUpBoard()
+        public void SetUpBoard()
         {
             throw new NotImplementedException();
         }
 
-        public static void MovePiece()
+        public void MovePiece()
         {
 
         }

@@ -1,0 +1,12 @@
+E:\SolidGameOfChess\SolidGameOfChessTests\bin\Debug\net6.0\SolidGameOfChessTests.deps.json
+E:\SolidGameOfChess\SolidGameOfChessTests\bin\Debug\net6.0\SolidGameOfChessTests.dll
+E:\SolidGameOfChess\SolidGameOfChessTests\bin\Debug\net6.0\SolidGameOfChessTests.pdb
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\SolidGameOfChessTests.csproj.AssemblyReference.cache
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\SolidGameOfChessTests.GeneratedMSBuildEditorConfig.editorconfig
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\SolidGameOfChessTests.AssemblyInfoInputs.cache
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\SolidGameOfChessTests.AssemblyInfo.cs
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\SolidGameOfChessTests.csproj.CoreCompileInputs.cache
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\SolidGameOfChessTests.dll
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\refint\SolidGameOfChessTests.dll
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\SolidGameOfChessTests.pdb
+E:\SolidGameOfChess\SolidGameOfChessTests\obj\Debug\net6.0\ref\SolidGameOfChessTests.dll

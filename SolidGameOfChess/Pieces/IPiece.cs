@@ -6,6 +6,6 @@ namespace SolidGameOfChess.Pieces
     {
         List<List<int>> Position { get; set; }
         PieceColor PieceColor { get; set; }
-        Player Owner { get; set; }
+        HumanPlayer Owner { get; set; }
     }
 }

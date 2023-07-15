@@ -1,13 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-namespace SolidGameOfChess
+﻿namespace SolidGameOfChess
 {
     public class Program
     {
-        Player playerOne = new Player();
-        Player playerTwo = new Player();
+        public static void Main(string[] args)
+        {
+            //TODO: what game you want to play? use gpt api to get response of how many player
+            ChessGame chessGame = new ChessGame();
 
-        ChessGame chessGame = new ChessGame(playerOne, playerTwo);
+            //TODO: Validate player count before starting game
+            int playerCount = 2;
+            chessGame.StartGame(playerCount);
+        }
     }
 
 }
