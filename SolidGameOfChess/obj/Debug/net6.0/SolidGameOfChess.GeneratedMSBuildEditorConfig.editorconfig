@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SolidGameOfChess
-build_property.ProjectDir = E:\SolidGameOfChess\SolidGameOfChess\
+build_property.ProjectDir = /Users/joaorsilva/deps/SolidGameOfChess/SolidGameOfChess/

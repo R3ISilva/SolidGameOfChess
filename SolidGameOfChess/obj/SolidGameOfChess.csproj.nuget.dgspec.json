@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj": {}
+    "/Users/joaorsilva/deps/SolidGameOfChess/SolidGameOfChess/SolidGameOfChess.csproj": {}
   },
   "projects": {
-    "E:\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj": {
+    "/Users/joaorsilva/deps/SolidGameOfChess/SolidGameOfChess/SolidGameOfChess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj",
+        "projectUniqueName": "/Users/joaorsilva/deps/SolidGameOfChess/SolidGameOfChess/SolidGameOfChess.csproj",
         "projectName": "SolidGameOfChess",
-        "projectPath": "E:\\SolidGameOfChess\\SolidGameOfChess\\SolidGameOfChess.csproj",
-        "packagesPath": "C:\\Users\\João Silva\\.nuget\\packages\\",
-        "outputPath": "E:\\SolidGameOfChess\\SolidGameOfChess\\obj\\",
+        "projectPath": "/Users/joaorsilva/deps/SolidGameOfChess/SolidGameOfChess/SolidGameOfChess.csproj",
+        "packagesPath": "/Users/joaorsilva/.nuget/packages/",
+        "outputPath": "/Users/joaorsilva/deps/SolidGameOfChess/SolidGameOfChess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\João Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/joaorsilva/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

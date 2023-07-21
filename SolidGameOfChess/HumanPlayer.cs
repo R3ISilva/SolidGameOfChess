@@ -9,6 +9,7 @@
         {
             PlayerInput = new PlayerInput();
         }
+
         public bool GetPlayer()
         {
             if (string.IsNullOrEmpty(Name))
