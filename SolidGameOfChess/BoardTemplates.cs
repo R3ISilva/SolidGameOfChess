@@ -5,8 +5,13 @@ namespace SolidGameOfChess
     public class BoardTemplates
     {
         //TODO: Add more boards, maybe read them from xml?
-        public static BoardTemplate GetStandardBoard()
+        public static BoardTemplate GetStandardBoard(int playerCount)
         {
+            if (playerCount < 0 || playerCount > 2)
+            {
+                throw new Exception(); //TODO: Do something when playercount becomes variable
+            }
+
             BoardTemplate boardTemplate = new BoardTemplate();
 
             List<List<BoardSquare>> boardSquares = new List<List<BoardSquare>>();

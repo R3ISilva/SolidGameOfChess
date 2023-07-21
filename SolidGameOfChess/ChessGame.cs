@@ -6,7 +6,7 @@
         public bool SystemMessages = false;
         Board Board;
         bool IsThereAWinner = false;
-
+        List<Board> BoardStates = new List<Board>();
         public ChessGame(bool systemMessages)
         {
             this.SystemMessages = systemMessages;
@@ -28,7 +28,7 @@
             players.FirstOrDefault().isWhite = true; //hammered by now
 
             //TODO: Add more boards
-            IBoardTemplate boardTemplate = BoardTemplates.GetStandardBoard();
+            IBoardTemplate boardTemplate = BoardTemplates.GetStandardBoard(players.Count);
 
             Board.SetUpBoard(boardTemplate);
 
@@ -44,6 +44,11 @@
             }
 
             return Board.GetWinner();
+        }
+
+        public Board GetBoardAtTurn(int turn)
+        {
+            return BoardStates[turn];
         }
 
         private List<IPlayer> GetPlayers(int humanPlayerCount)
@@ -71,6 +76,7 @@
 
         private bool StartTurn(IPlayer player)
         {
+            BoardStates.Add(Board);
             MovesManager movesManager = new MovesManager(Board, player);
 
             if (SystemMessages)
