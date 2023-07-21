@@ -1,4 +1,6 @@
-﻿namespace SolidGameOfChess
+﻿using static SolidGameOfChess.Enumerators;
+
+namespace SolidGameOfChess
 {
     public interface IPlayer
     {
@@ -6,6 +8,6 @@
 
         bool GetPlayer();
 
-        bool isWhite { get; set; }
+        PieceColor playerColor { get; set; }
     }
 }

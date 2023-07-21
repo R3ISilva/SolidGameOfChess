@@ -1,4 +1,6 @@
-﻿namespace SolidGameOfChess
+﻿using static SolidGameOfChess.Enumerators;
+
+namespace SolidGameOfChess
 {
     public class ChessGame
     {
@@ -24,8 +26,8 @@
 
             List<IPlayer> players = GetPlayers(humanPlayerCount);
 
-            //TODO: Add a choose color for player 1
-            players.FirstOrDefault().isWhite = true; //hammered by now
+            //TODO: Add a choose color for players
+            players.FirstOrDefault().playerColor = PieceColor.White; //hammered by now
 
             //TODO: Add more boards
             IBoardTemplate boardTemplate = BoardTemplates.GetStandardBoard(players.Count);

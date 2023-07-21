@@ -1,11 +1,13 @@
-﻿namespace SolidGameOfChess
+﻿using static SolidGameOfChess.Enumerators;
+
+namespace SolidGameOfChess
 {
     public class HumanPlayer : IPlayer
     {
         #region Public Members
         public string Name { get; set; }
         public PlayerInput PlayerInput { get; set; }
-        public bool isWhite { get; set; }
+        public PieceColor playerColor { get; set; }
 
         public HumanPlayer()
         {
