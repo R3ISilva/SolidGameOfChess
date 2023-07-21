@@ -4,6 +4,8 @@
     {
         public int ID; //TODO: IMPLEMENT BOARD IDENTIFICATION
 
+        public IPlayer lastInteractedPlayer;
+
         public List<List<BoardSquare>> Squares { get; set; }
 
         public void SetUpBoard(IBoardTemplate boardTemplate)
@@ -11,10 +13,11 @@
             Squares = boardTemplate.Squares;
         }
 
-        public bool MovePiece(Move move)
+        public bool MovePiece(Move move, IPlayer player)
         {
             bool isThereAWiner = false;
 
+            lastInteractedPlayer = player;
             return isThereAWiner;
         }
 

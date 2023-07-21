@@ -9,7 +9,7 @@ namespace SolidGameOfChess
         {
             if (playerCount < 0 || playerCount > 2)
             {
-                throw new Exception(); //TODO: Do something when playercount becomes variable
+                throw new Exception("Do something when playercount becomes variable");
             }
 
             BoardTemplate boardTemplate = new BoardTemplate();
