@@ -5,6 +5,8 @@
         #region Public Members
         public string Name { get; set; }
         public PlayerInput PlayerInput { get; set; }
+        public bool isWhite { get; set; }
+
         public HumanPlayer()
         {
             PlayerInput = new PlayerInput();
@@ -17,7 +19,7 @@
                 Name = GetPlayerName();
             }
 
-            StandardMessages.ThatsItThankYouPlayer(Name);
+            WriteToConsole.ThatsItThankYouPlayer(Name);
             PlayerInput.PressEnterToContinue();
 
             return true;
@@ -28,7 +30,7 @@
         #region Private Members
         private string GetPlayerName()
         {
-            StandardMessages.EnterPlayerName();
+            WriteToConsole.EnterPlayerName();
 
             string name = string.Empty;
 
@@ -38,7 +40,7 @@
 
                 if (string.IsNullOrEmpty(name))
                 {
-                    StandardMessages.InvalidPlayerName();
+                    WriteToConsole.InvalidPlayerName();
                 }
             }
 

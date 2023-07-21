@@ -17,5 +17,11 @@
             White,
             Black
         }
+
+        public enum SquareColor
+        {
+            White,
+            Black
+        }
     }
 }

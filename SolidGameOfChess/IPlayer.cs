@@ -5,5 +5,7 @@
         string Name { get; set; }
 
         bool GetPlayer();
+
+        bool isWhite { get; set; }
     }
 }

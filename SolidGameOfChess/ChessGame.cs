@@ -3,34 +3,47 @@
     public class ChessGame
     {
         static int totalPlayerCount = 2;
-
+        public bool SystemMessages = false;
         Board Board;
-        bool IsThereAWinner  = false;
+        bool IsThereAWinner = false;
 
-        public void StartGame(int humanPlayerCount, bool systemMessages = true)
+        public ChessGame(bool systemMessages)
         {
-            if (systemMessages)
+            this.SystemMessages = systemMessages;
+            Board = new Board();
+        }
+
+        /// <returns>Returns the winner of the game</returns>
+        public IPlayer StartGame(int humanPlayerCount)
+        {
+            if (SystemMessages)
             {
-                StandardMessages.Welcome();
+                WriteToConsole.Welcome();
                 GameInput.PressEnterToContinue();
             }
 
             List<IPlayer> players = GetPlayers(humanPlayerCount);
 
-            Board.SetUpBoard();
+            //TODO: Add a choose color for player 1
+            players.FirstOrDefault().isWhite = true; //hammered by now
 
-            Board.PrintBoard();
+            //TODO: Add more boards
+            IBoardTemplate boardTemplate = BoardTemplates.GetStandardBoard();
 
+            Board.SetUpBoard(boardTemplate);
 
-            while(!IsThereAWinner)
+            while (!IsThereAWinner)
             {
-
-                Turn turn = new Turn(systemMessages);
-                
-
-                Board.Move();
-
+                foreach (IPlayer player in players)
+                {
+                    if (StartTurn(player))
+                    {
+                        IsThereAWinner = true;
+                    }
+                }
             }
+
+            return Board.GetWinner();
         }
 
         private List<IPlayer> GetPlayers(int humanPlayerCount)
@@ -54,6 +67,25 @@
             }
 
             return players;
+        }
+
+        private bool StartTurn(IPlayer player)
+        {
+            MovesManager movesManager = new MovesManager(Board, player);
+
+            if (SystemMessages)
+            {
+                WriteToConsole.PrintBoard(Board);
+
+                List<Move> availableMoves = movesManager.GetAvailableMoves();
+                WriteToConsole.AvailableMoves(availableMoves);
+            }
+
+            Move move = movesManager.GetMove();
+            Board.MovePiece(move);
+
+
+            return false;
         }
     }
 }

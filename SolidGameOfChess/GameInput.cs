@@ -4,9 +4,9 @@
     {
         public static void PressEnterToContinue()
         {
-            StandardMessages.PressEnterToContinue();
+            WriteToConsole.PressEnterToContinue();
             Console.ReadLine();
-            StandardMessages.CleanTerminal();
+            WriteToConsole.CleanTerminal();
         }
     }
 }

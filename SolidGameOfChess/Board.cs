@@ -1,15 +1,32 @@
 ﻿namespace SolidGameOfChess
 {
-    public class Board
+    public class Board : IBoardTemplate
     {
-        public void SetUpBoard()
+        public int ID; //TODO: IMPLEMENT BOARD IDENTIFICATION
+
+        public List<List<BoardSquare>> Squares { get; set; }
+
+        public void SetUpBoard(IBoardTemplate boardTemplate)
         {
-            throw new NotImplementedException();
+            Squares = boardTemplate.Squares;
         }
 
-        public void MovePiece()
+        public bool MovePiece(Move move)
+        {
+            bool isThereAWiner = false;
+
+            return isThereAWiner;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <returns>Returns the Winner</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public IPlayer GetWinner()
         {
 
+            throw new NotImplementedException();
         }
     }
 }

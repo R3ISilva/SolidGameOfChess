@@ -4,6 +4,7 @@
     {
         //TODO DO THIS IN SOLIDGAMEOFCHESSAI
         public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool isWhite { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public bool GetPlayer()
         {

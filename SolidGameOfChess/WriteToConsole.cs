@@ -1,6 +1,6 @@
 ﻿namespace SolidGameOfChess
 {
-    public static class StandardMessages
+    public static class WriteToConsole
     {
         public static void Welcome()
         {
@@ -36,5 +36,27 @@
         {
             Console.Clear();
         }
+
+        public static void PrintBoard(Board board)
+        {
+            //TODO: ADD CAPACITY TO PRINT INVERTED
+            string horizontalSquares = "";
+
+            foreach (List<BoardSquare> HorizontalSquares in board.Squares)
+            {
+                foreach (BoardSquare BoardSquare in HorizontalSquares)
+                {
+                    horizontalSquares += BoardSquare.GetPrint();
+                }
+
+                Console.WriteLine(HorizontalSquares);
+            }
+        }
+
+        public static void AvailableMoves(List<Move> moves)
+        {
+
+        }
+
     }
 }

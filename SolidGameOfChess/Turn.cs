@@ -9,6 +9,11 @@ namespace SolidGameOfChess
 		{
             SystemMessages = systemMessages;
 		}
-	}
+
+        internal void StartTurn()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 
