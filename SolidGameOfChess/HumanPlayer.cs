@@ -9,6 +9,7 @@
         {
             PlayerInput = new PlayerInput();
         }
+
         public bool GetPlayer()
         {
             if (string.IsNullOrEmpty(Name))
@@ -17,7 +18,7 @@
             }
 
             StandardMessages.ThatsItThankYouPlayer(Name);
-            GameInput.PressEnterToContinue();
+            PlayerInput.PressEnterToContinue();
 
             return true;
         }

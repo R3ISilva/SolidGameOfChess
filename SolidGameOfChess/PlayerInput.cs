@@ -23,5 +23,12 @@
 
             return string.Empty;
         }
+
+        public static void PressEnterToContinue()
+        {
+            StandardMessages.PressEnterToContinue();
+            Console.ReadLine();
+            StandardMessages.CleanTerminal();
+        }
     }
 }
