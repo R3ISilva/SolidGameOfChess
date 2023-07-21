@@ -5,6 +5,7 @@
         static int totalPlayerCount = 2;
 
         Board Board;
+        bool IsThereAWinner  = false;
 
         public void StartGame(int humanPlayerCount, bool systemMessages = true)
         {
@@ -17,6 +18,19 @@
             List<IPlayer> players = GetPlayers(humanPlayerCount);
 
             Board.SetUpBoard();
+
+            Board.PrintBoard();
+
+
+            while(!IsThereAWinner)
+            {
+
+                Turn turn = new Turn(systemMessages);
+                
+
+                Board.Move();
+
+            }
         }
 
         private List<IPlayer> GetPlayers(int humanPlayerCount)
