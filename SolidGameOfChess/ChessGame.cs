@@ -29,7 +29,7 @@ namespace SolidGameOfChess
             //TODO: Add a choose color for players
             players.FirstOrDefault().playerColor = PieceColor.White; //hammered by now
 
-            IBoardTemplate boardTemplate = BoardTemplates.GetStandardBoard(players.Count);
+            BoardTemplate boardTemplate = BoardTemplates.GetStandardBoard(players.Count);
 
             Board.SetUpBoard(boardTemplate);
 
@@ -77,12 +77,9 @@ namespace SolidGameOfChess
 
         private bool StartTurn(IPlayer player)
         {
-            Board board = new Board();
-            board.SetUpBoard(board);
+            Board currentBoardState = Board;
+            BoardStates.Add(currentBoardState);
 
-            BoardStates.Add(board);
-
-            Board.Squares[0][0].Color = SquareColor.Black;
             MovesManager movesManager = new MovesManager(Board, player);
 
             if (SystemMessages)

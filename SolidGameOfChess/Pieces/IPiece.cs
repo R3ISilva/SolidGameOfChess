@@ -4,8 +4,8 @@ namespace SolidGameOfChess.Pieces
 {
     public interface IPiece
     {
-        List<List<int>> Position { get; set; }
-        PieceColor PieceColor { get; set; }
+        PieceColor Color { get; set; }
         HumanPlayer Owner { get; set; }
+        string GetPrintString();
     }
 }

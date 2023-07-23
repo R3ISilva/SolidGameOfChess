@@ -40,16 +40,17 @@
         public static void PrintBoard(Board board)
         {
             //TODO: ADD CAPACITY TO PRINT INVERTED
-            string horizontalSquares = "";
-
+            
             foreach (List<BoardSquare> HorizontalSquares in board.Squares)
             {
+                string horizontalSquares = "";
+
                 foreach (BoardSquare BoardSquare in HorizontalSquares)
                 {
                     horizontalSquares += BoardSquare.GetPrint();
                 }
 
-                Console.WriteLine(HorizontalSquares);
+                Console.WriteLine(horizontalSquares);
             }
         }
 

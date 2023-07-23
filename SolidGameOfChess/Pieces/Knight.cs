@@ -4,8 +4,28 @@ namespace SolidGameOfChess.Pieces
 {
     public class Knight : IPiece
     {
-        public List<List<int>> Position { get; set; }
-        public PieceColor PieceColor { get; set; }
+        public Knight(PieceColor color)
+        {
+            Color = color;
+        }
+
+        public PieceColor Color { get; set; }
         public HumanPlayer Owner { get; set; }
+
+        public string GetPrintString()
+        {
+            string printString;
+
+            if (Color == PieceColor.White)
+            {
+                printString = "\u2658";
+            }
+            else
+            {
+                printString = "\u265E";
+            }
+
+            return printString;
+        }
     }
 }
