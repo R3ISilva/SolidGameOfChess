@@ -49,62 +49,61 @@ namespace SolidGameOfChess
                         }
                     }
 
-                    if (j == 0)
+                    if (i == 6)
                     {
-                        if(i == 0 || i == 8)
-                        {
-                            boardSquare.Piece = new Rook(PieceColor.Black);
-                        }
-                        else if (i == 1 || i == 7)
-                        {
-                            boardSquare.Piece = new Knight(PieceColor.Black);
-                        }
-                        else if (i == 2 || i == 6)
-                        {
-                            boardSquare.Piece = new Bishop(PieceColor.Black);
-                        }
-                        else if (i == 3)
-                        {
-                            boardSquare.Piece = new Queen(PieceColor.Black);
-                        }
-                        else if (i == 4)
-                        {
-                            boardSquare.Piece = new King(PieceColor.Black);
-                        }
+                        boardSquare.Piece = new Pawn(PieceColor.White);
                     }
-                    else if (j == 7)
+                    else if (i == 1)
                     {
-                        if (i == 0 || i == 8)
+                        boardSquare.Piece = new Pawn(PieceColor.Black);
+                    }
+                    else if (i == 7)
+                    {
+                        if (j == 0 || j == 7)
                         {
                             boardSquare.Piece = new Rook(PieceColor.White);
                         }
-                        else if (i == 1 || i == 7)
+                        else if (j == 1 || j == 6)
                         {
                             boardSquare.Piece = new Knight(PieceColor.White);
                         }
-                        else if (i == 2 || i == 6)
+                        else if (j == 2 || j == 5)
                         {
                             boardSquare.Piece = new Bishop(PieceColor.White);
                         }
-                        else if (i == 3)
+                        else if (j == 3)
                         {
                             boardSquare.Piece = new Queen(PieceColor.White);
                         }
-                        else if (i == 4)
+                        else
                         {
                             boardSquare.Piece = new King(PieceColor.White);
                         }
                     }
-                    else if(j == 1)
+                    else if (i == 0)
                     {
-                        boardSquare.Piece = new Pawn(PieceColor.Black);
+                        if (j == 0 || j == 7)
+                        {
+                            boardSquare.Piece = new Rook(PieceColor.Black);
+                        }
+                        else if (j == 1 || j == 6)
+                        {
+                            boardSquare.Piece = new Knight(PieceColor.Black);
+                        }
+                        else if (j == 2 || j == 5)
+                        {
+                            boardSquare.Piece = new Bishop(PieceColor.Black);
+                        }
+                        else if (j == 3)
+                        {
+                            boardSquare.Piece = new King(PieceColor.Black);
+                        }
+                        else
+                        {
+                            boardSquare.Piece = new Queen(PieceColor.Black);
+                        }
                     }
-                    else if(j == 6)
-                    {
-                        boardSquare.Piece = new Pawn(PieceColor.White);
 
-                    }
-                    
                     horizontalLine.Add(boardSquare);
                 }
 

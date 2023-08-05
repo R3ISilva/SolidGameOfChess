@@ -5,24 +5,20 @@ namespace SolidGameOfChess
     public class ChessGame
     {
         static int totalPlayerCount = 2;
-        public bool SystemMessages = false;
         Board Board;
         bool IsThereAWinner = false;
         List<Board> BoardStates = new List<Board>();
         public ChessGame(bool systemMessages)
         {
-            this.SystemMessages = systemMessages;
+            WriteToConsole.SystemMessages = systemMessages;
             Board = new Board();
         }
 
         /// <returns>Returns the winner of the game</returns>
-        public IPlayer StartGame(int humanPlayerCount)
+        public IPlayer PlayGame(int humanPlayerCount)
         {
-            if (SystemMessages)
-            {
-                WriteToConsole.Welcome();
-                GameInput.PressEnterToContinue();
-            }
+            WriteToConsole.Welcome();
+            GameInput.PressEnterToContinue();
 
             List<IPlayer> players = GetPlayers(humanPlayerCount);
 
@@ -82,19 +78,17 @@ namespace SolidGameOfChess
 
             MovesManager movesManager = new MovesManager(Board, player);
 
-            if (SystemMessages)
-            {
-                WriteToConsole.PrintBoard(Board);
 
-                List<Move> availableMoves = movesManager.GetAvailableMoves();
-                WriteToConsole.AvailableMoves(availableMoves);
-            }
+            WriteToConsole.PrintBoard(Board);
+
+            List<Move> availableMoves = movesManager.GetAvailableMoves();
+            WriteToConsole.AvailableMoves(availableMoves);
 
             Move move = movesManager.GetMove();
             Board.MovePiece(move, player);
 
 
-            return false;
+            return Board.IsThereAWinner();
         }
     }
 }

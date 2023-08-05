@@ -1,4 +1,6 @@
-﻿namespace SolidGameOfChess
+﻿using SolidGameOfChess.Pieces;
+
+namespace SolidGameOfChess
 {
     public class Board : IBoardTemplate
     {
@@ -13,12 +15,14 @@
             Squares = boardTemplate.Squares;
         }
 
-        public bool MovePiece(Move move, IPlayer player)
+        public void MovePiece(Move move, IPlayer player)
         {
-            bool isThereAWiner = false;
-
             lastInteractedPlayer = player;
-            return isThereAWiner;
+
+            IPiece movingPiece = Squares[move.FromY][move.FromX].Piece;
+            Squares[move.FromY][move.FromX].Piece = null;
+
+            Squares[move.ToY][move.ToX].Piece = movingPiece;
         }
 
         /// <summary>
@@ -29,6 +33,12 @@
         public IPlayer GetWinner()
         {
 
+            throw new NotImplementedException();
+        }
+
+        public bool IsThereAWinner()
+        {
+            //Todo: Implement this, check for valid moves on king
             throw new NotImplementedException();
         }
     }

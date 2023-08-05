@@ -28,13 +28,13 @@ namespace SolidGameOfChess
         {
             string printString;
 
-            if(Color == SquareColor.White)
+            if (Color == SquareColor.White)
             {
-                printString = "\u25A3"; //TODO: Add this to a string to be readable
+                printString = Sprites.WhiteSquare;
             }
             else
             {
-                printString = "\u25A2";
+                printString = Sprites.BlackSquare;
             }
 
             return printString;

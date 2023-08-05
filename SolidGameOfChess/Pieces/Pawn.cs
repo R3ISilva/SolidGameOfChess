@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using static SolidGameOfChess.Enumerators;
+﻿using static SolidGameOfChess.Enumerators;
 
 namespace SolidGameOfChess.Pieces
 {
@@ -20,11 +19,11 @@ namespace SolidGameOfChess.Pieces
 
             if (Color == PieceColor.White)
             {
-                printString = "\u2659";
+                printString = Sprites.WhitePawn;
             }
             else
             {
-                printString = "\u265F";
+                printString = Sprites.BlackPawn;
             }
 
             return printString;

@@ -18,11 +18,11 @@ namespace SolidGameOfChess.Pieces
 
             if (Color == PieceColor.White)
             {
-                printString = "\u2657";
+                printString = Sprites.WhiteBishop;
             }
             else
             {
-                printString = "\u265D";
+                printString = Sprites.BlackBishop;
             }
 
             return printString;

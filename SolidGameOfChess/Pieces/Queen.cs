@@ -18,11 +18,11 @@ namespace SolidGameOfChess.Pieces
 
             if (Color == PieceColor.White)
             {
-                printString = "\u2655";
+                printString = Sprites.WhiteQueen;
             }
             else
             {
-                printString = "\u265B";
+                printString = Sprites.BlackQueen;
             }
 
             return printString;

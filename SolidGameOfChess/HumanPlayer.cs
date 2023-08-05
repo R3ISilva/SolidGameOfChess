@@ -49,6 +49,11 @@ namespace SolidGameOfChess
             return name;
         }
 
+        public Move GetMove()
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 }
