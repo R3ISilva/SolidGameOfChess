@@ -7,6 +7,7 @@ namespace SolidGameOfChess
         string Name { get; set; }
 
         bool GetPlayer();
+
         Move GetMove();
 
         PieceColor playerColor { get; set; }

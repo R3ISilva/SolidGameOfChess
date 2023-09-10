@@ -84,7 +84,7 @@ namespace SolidGameOfChess
             List<Move> availableMoves = movesManager.GetAvailableMoves();
             WriteToConsole.AvailableMoves(availableMoves);
 
-            Move move = movesManager.GetMove();
+            Move move = movesManager.GetMove(availableMoves);
             Board.MovePiece(move, player);
 
 

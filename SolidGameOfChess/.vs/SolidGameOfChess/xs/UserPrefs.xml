@@ -1,3 +1,47 @@
 ﻿<Properties StartupConfiguration="{E49160E7-4325-4CB8-BA64-3666901D4524}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.SolidGameOfChess PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HumanPlayer.cs">
+    <Files>
+      <File FileName="Program.cs" />
+      <File FileName="ChessGame.cs" Line="87" Column="43" />
+      <File FileName="HumanPlayer.cs" Line="63" Column="38" />
+      <File FileName="PlayerInput.cs" Line="27" Column="28" />
+      <File FileName="IPlayer.cs" Line="11" Column="14" />
+      <File FileName="AIPlayer.cs" Line="20" Column="6" />
+      <File FileName="Board.cs" />
+      <File FileName="Enumerators.cs" />
+      <File FileName="GameInput.cs" />
+      <File FileName="Turn.cs" />
+      <File FileName="BoardTemplates.cs" />
+      <File FileName="WriteToConsole.cs" Line="76" Column="28" />
+      <File FileName="BoardSquare.cs" />
+      <File FileName="Pieces/King.cs" />
+      <File FileName="Pieces/Bishop.cs" />
+      <File FileName="Pieces/Knight.cs" />
+      <File FileName="Pieces/Pawn.cs" />
+      <File FileName="Pieces/Rook.cs" />
+      <File FileName="Pieces/Queen.cs" />
+      <File FileName="MovesManager.cs" Line="21" Column="35" />
+      <File FileName="Pieces/IPiece.cs" />
+      <File FileName="BoardTemplate.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SolidGameOfChess" expanded="True">
+            <Node name="SolidGameOfChess" expanded="True">
+              <Node name="Pieces" expanded="True" />
+              <Node name="HumanPlayer.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

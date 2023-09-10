@@ -11,7 +11,7 @@
             this.player = player;
         }
 
-        public Move GetMove()
+        public Move GetMove(List<Move> AvailableMoves)
         {
             Move move = new Move();
 

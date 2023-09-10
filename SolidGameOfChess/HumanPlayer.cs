@@ -1,4 +1,5 @@
-﻿using static SolidGameOfChess.Enumerators;
+﻿using System.Xml.Linq;
+using static SolidGameOfChess.Enumerators;
 
 namespace SolidGameOfChess
 {
@@ -51,7 +52,18 @@ namespace SolidGameOfChess
 
         public Move GetMove()
         {
-            throw new NotImplementedException();
+            Move move;
+            string moveReceived = "";
+
+            while(string.IsNullOrEmpty(move))
+            {
+                move = PlayerInput.GetMove();
+            }
+
+            move.FromX = moveReceived[0];
+
+
+            return move;
         }
 
         #endregion
